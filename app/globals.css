@@ -8,10 +8,20 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+
+  /* background: linear-gradient(180deg, #F8FAFF 78%, rgba(244, 247, 255, 0) 92.56%, rgba(0, 88, 255, 0.04) 105.3%, rgba(0, 88, 255, 0.15) 114.93%, rgba(0, 89, 255, 0.44) 123.05%, rgba(7, 91, 247, 0.76) 126.78%); */
+
 }
 
-.gradientBackground {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* .gradientBackground {
   position: relative;
   min-height: 100vh;
   background: var(--background);
@@ -57,4 +67,4 @@ body {
 .content {
   position: relative;
   z-index: 1;
-}
+} */
