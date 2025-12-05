@@ -1,12 +1,18 @@
 // import Image from "next/image";
 
 import Navigation from "./components/Navigation"
+import Hero from "./section/hero/Hero"
+import AboutUs from "./section/aboutUs/AboutUs"
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Navigation />
-      <h1>Home</h1>
-    </div>
+      <div className="container">
+        <Hero />
+        <AboutUs />
+      </div>
+    
+    </>
   );
 }

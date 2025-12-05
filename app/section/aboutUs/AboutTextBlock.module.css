@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  font-family: Inter;
+
+  background: #FAFAFA;
+  padding: 2em;
+}
+
+.heading {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600; /* font-semibold */
+  margin-top: 0.5rem; /* mt-2 */
+  line-height: 1.25;
+  color: #1a202c; /* Default dark text color */
+}
+
+.description {
+  margin-top: 0.75rem; /* mt-3 */
+  color: #4a5568; /* text-gray-600 */
+  max-width: 42rem; /* max-w-2xl */
+  line-height: 1.625; /* leading-relaxed */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.subHeading {
+    color: red;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2.25rem; /* md:text-4xl */
+  }
+  
+  .description {
+    font-size: 1rem; /* md:text-base */
+  }
+}

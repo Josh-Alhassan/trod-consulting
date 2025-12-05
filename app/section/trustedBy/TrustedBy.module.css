@@ -1,0 +1,47 @@
+.trustedByContainer {
+    margin-bottom: 22px;
+}
+
+.trustedByTitle {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.trustedByText {
+    font-family: "JetBrains Mono", monospace;
+    font-size: .9em;
+}
+
+@media (min-width: 768px) {
+    .trustedByTitle {
+        font-size: 1.5em;
+        width: 60%;
+    }
+
+    .trustedByText {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .trustedByContainer {
+        width: 65%;
+    }
+    .trustedByTitle {
+        /* font-size: 2em; */
+        width: 100%;
+        font-size: 1.7em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .trustedByContainer {
+        width: 85%;
+        font-size: 1.3em;
+    }
+
+    .trustedByTitle {
+        font-size: 1.5em;
+    }
+}

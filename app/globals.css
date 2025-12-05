@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -19,6 +22,36 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+
+
+/* === Custom Animations === */
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes glowPulse {
+  0% { opacity: 0.65; filter: blur(40px); }
+  50% { opacity: 1; filter: blur(55px); }
+  100% { opacity: 0.65; filter: blur(40px); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-glow { animation: glowPulse 6s ease-in-out infinite; }
+.animate-fade { animation: fadeIn 1.4s ease-out forwards; }
+
+/* BLUE glow for cards/sections */
+.glow-blue {
+  box-shadow: 0 0 60px 20px rgba(0, 132, 255, 0.25);
 }
 
 /* .gradientBackground {

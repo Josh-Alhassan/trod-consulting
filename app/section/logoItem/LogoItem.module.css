@@ -1,0 +1,99 @@
+/* Base styles for the logo container */
+.logoContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 1.375rem; /* 22px */
+  align-items: center;
+  justify-content: center;
+  margin: 1.375rem 0;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+/* Logo wrapper for better control */
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Logo image styles */
+.logo {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  object-fit: contain;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Hover and focus states for better interactivity */
+.logoWrapper:focus-within .logo,
+.logoWrapper:hover .logo {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* Screen reader only text */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+  .logoContainer {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .logoContainer {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 0 2rem;
+  }
+  
+  .logo {
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logoContainer {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.125rem; /* 18px */
+    justify-items: center;
+    padding: 0;
+  }
+  
+  .logo {
+    max-width: 100%;
+    width: 80px;
+    height: auto;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+  .logo {
+    filter: contrast(1.2);
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .logoWrapper,
+  .logo {
+    transition: none;
+  }
+}

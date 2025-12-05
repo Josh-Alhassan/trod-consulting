@@ -1,14 +1,15 @@
 .navbar {
     color: #000;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
     background: #FFF;
@@ -19,6 +20,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /* background-color: orange; */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .navLeft {
@@ -115,6 +120,15 @@
 
 /* Tablet and Desktop */
 @media (min-width: 768px) {
+
+    .container {
+         padding: 1rem 0;
+    }
+
+    .navWrapper {
+        padding: 0 1rem;
+    }
+    
     .desktopNav {
         display: flex;
         gap: 2rem;
@@ -140,7 +154,7 @@
 
 @media (min-width: 1024px) {
     .container {
-        padding: 0 2rem;
+        padding: 1rem;
     }
 
     .desktopNav {
