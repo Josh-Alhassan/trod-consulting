@@ -1,0 +1,141 @@
+.container {
+    background: #FAFAFA;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3erem 1rem;
+
+}
+
+.imageContainer {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    margin-top: 30px;
+
+    /* padding: 10px; */
+}
+
+.imageLeft {
+    background-image: url("../../../public/images/aboutUsImg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+
+    position: relative;
+}
+
+.imageLeft:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.imageText {
+    background: linear-gradient(to bottom, rgba(8, 8, 13, 0.7), rgba(8, 8, 13, 0.7));
+    color: #fff;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /* filter: blur(.4px); */
+}
+
+.imageRight {
+    background-image: url(../../../public/images/layerBlur.svg);
+    background-color: rgba(0, 0, 255, 0.701);
+    height: 300px;
+    position: relative;
+}
+
+.cybersecurityText {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-weight: 600;
+    color: #FFF;
+    font-size: 1.2em;
+    width: 120px;
+}
+
+.shieldContainer {
+    position: relative;
+}
+
+.securityShield {
+    position: absolute;
+
+    width: 197px;
+    height: auto;;
+}
+
+.shield1 {
+    top: 0px;
+    left: 0px;
+
+    z-index: 3;
+}
+
+.shield2 {
+    top: 0px;
+    left: 50px;
+
+    z-index: 2;
+}
+
+.shield3 {
+    top: 0px;
+    left: 90px;
+
+    z-index: 1
+}
+
+@media (min-width: 375px) {
+    .securityShield {
+    width: 252px;
+   
+}
+}
+
+@media (min-width: 425px) {
+    .securityShield {
+    width: 262px;
+}
+}
+
+@media (min-width: 768px) {
+    .imageContainer {
+        grid-template-columns: 2fr 1fr;
+
+        margin-top: 60px;
+    }
+
+    .imageText {
+        font-size: 1.2em;
+    }
+
+ .securityShield {
+    width: 138px
+ }
+}
+
+@media (min-width: 1024) {
+    .imageText {
+        font-size: 1.6em;
+    }
+
+    .securityShield {
+        width: 222px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .securityShield {
+        width: 273px;
+    }
+}
+    

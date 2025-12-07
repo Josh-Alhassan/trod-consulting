@@ -4,9 +4,11 @@ import LogoItem from '../logoItem/LogoItem';
 import HeroBackground from '@/app/components/HeroBackground';
 const video = '/videos/hero.mp4'
 
+import '../../globals.css'
+
 export default function Hero() {
     return (
-        <div className={styles.hero}>
+        <div className={`${styles.hero} containerSection`}>
             <HeroBackground>
 
                 {/* Video Container */}

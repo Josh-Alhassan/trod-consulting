@@ -8,8 +8,8 @@ interface SectionSubheaderProps {
 
 export default function SectionSubheader({ children, className = '' }: SectionSubheaderProps) {
   return (
-    <p className={`${styles.subheader} ${className}`}>
+    <h3 className={`${styles.subheader} ${className}`}>
       {children}
-    </p>
+    </h3>
   );
 }

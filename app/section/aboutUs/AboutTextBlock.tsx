@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import SectionSubheader from '@/app/components/SectionSubheader';
+import Heading from '@/app/components/Heading';
 import styles from './AboutTextBlock.module.css';
 
 interface AboutTextBlockProps {
@@ -39,9 +40,9 @@ const AboutTextBlock: FC<AboutTextBlockProps> = ({
   return (
     <div className={`${styles.container} ${className}`}>
       <SectionSubheader className={styles.subHeading}>// About Us</SectionSubheader>
-      <h2 className={styles.heading}>
+      <Heading level="h2" className={styles.heading}>
         {title}
-      </h2>
+      </Heading>
       <p className={styles.description}>
         {description}
       </p>

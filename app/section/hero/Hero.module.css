@@ -1,8 +1,8 @@
 .hero {
     padding: 1rem 0;
-    width: 100%;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
@@ -116,13 +116,13 @@
     
     .heroTitle {
         font-size: 3.5rem;
-        max-width: 70%;
+        max-width: 100%;
         margin-bottom: 1.5rem;
     }
     
     .heroText {
         font-size: 1.25rem;
-        max-width: 70%;
+        max-width: 100%;
         margin-bottom: 2rem;
     }
 }
@@ -134,12 +134,12 @@
     }
     
     .heroTitle {
-        font-size: 4rem;
-        max-width: 60%;
+        font-size: 3rem;
+        max-width: 100%;
     }
     
     .heroText {
-        max-width: 60%;
+        max-width: 100%;
         font-size: 1.25rem;
     }
     
@@ -151,12 +151,12 @@
 
 @media (min-width: 1440) {
     .heroTitle {
-        width: 65%;
+        width:100%;
         font-size: 7.2em;
     }
 
     .heroText {
-        width: 65%;
+        width: 100%;
         font-size: 1.6em;
     }
 }
