@@ -42,6 +42,7 @@
     position: absolute;
     bottom: 0px;
     width: 100%;
+    font-weight: 600;
     /* filter: blur(.4px); */
 }
 
