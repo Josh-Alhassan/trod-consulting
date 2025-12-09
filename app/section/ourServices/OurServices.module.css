@@ -13,7 +13,7 @@
 }
 
 .serviceContentWrapper {
-    background-color: orange;
+    background: linear-gradient(180deg, #060606 0%, #0F0F10 100%);
     padding: 20px;
 }
 
@@ -27,6 +27,11 @@
     width: 50px;
     height: auto;
 }
+
+/* .featureIcon {
+    width: 15px;
+    height: auto;
+} */
 
 .servicePagination {
     color: #fff;
@@ -47,23 +52,23 @@
 
     flex-direction: column;
 
-    background-color: orangered;
-}
-
-.serviceFeature {
-    background-color: blue;
-}   
+    /* background-color: orangered; */
+} 
 
 .serviceFeatures:first-of-type {
     margin-bottom: 10px;
 }
 
-.serviceFeature {
+.serviceFeatureItem {
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
-.featureIcon {
+.serviceFeatureItem p {
+    font-size: 1.2em;
+}
+
+.serviceFeatureIcon {
     width: 15px;
     height: auto;
 }
@@ -71,10 +76,62 @@
 
 .serviceButton {
     background-color: #075BF7;
-    padding: 22px 11px;
+    padding: 20px 10px;
     border-left: 3px solid #fff;
     font-size: 1.4em;
     font-weight: 600;
     text-align: left;
     width: 100%;
+}
+
+.serviceButton2 {
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .serviceContentWrapper {
+        padding: 40px;
+        /* width: 80%; */
+    }
+
+    .serviceButton {
+        width: 40%;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .serviceHeading {
+        font-size: 2.25rem;
+    }
+
+    .serviceContentWrapper {
+        padding: 60px;
+        margin-top: 36px;
+    }
+
+    .serviceBodyText {
+        font-size: 2.4em;
+    }
+
+    .serviceFeatures {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    
+    .serviceFeatureItem p,
+    .serviceButton {
+        font-size: 1.3em;
+    }
+
+    .serviceButton {
+        width: 50%;
+    }
 }
