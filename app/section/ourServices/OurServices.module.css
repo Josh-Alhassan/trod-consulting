@@ -13,7 +13,9 @@
 }
 
 .serviceContentWrapper {
-    background: linear-gradient(180deg, #060606 0%, #0F0F10 100%);
+    background: 
+        linear-gradient(180deg, #060606ee 0%, #0f0f10e9 100%),
+        url(../../../public/images/noisebackground.jpg) no-repeat center / cover;
     padding: 20px;
 }
 
