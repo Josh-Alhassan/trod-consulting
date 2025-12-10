@@ -9,6 +9,7 @@ import Image from "next/image";
 // Import all icons
 import serviceIconOne from '@/public/serviceIcon1.svg';
 import serviceIconTwo from '@/public/serviceIcon2.svg';
+import serviceIconThree from '@/public/serviceIcon3.svg'
 import featureIconOne from '@/public/featureIconOne.svg';
 import featureIconTwo from '@/public/featureIconTwo.svg';
 import featureIconThree from '@/public/featureIconThree.svg';
@@ -21,6 +22,7 @@ import featureIcon8 from '@/public/featureIcon8.svg';
 const icons = {
   serviceIconOne,
   serviceIconTwo,
+  serviceIconThree,
   featureIconOne,
   featureIconTwo,
   featureIconThree,
@@ -183,6 +185,80 @@ const OurServices = () => {
           {
             id: 'enterprise-integration',
             text: 'Enterprise Systems Integration',
+            icon: 'featureIconSix',
+          },
+        ],
+        [
+          {
+            id: 'it-architecture',
+            text: 'IT Architecture & Process Automation',
+            icon: 'featureIconSeven',
+          },
+          {
+            id: 'software-evaluation',
+            text: 'Software Evaluation & Vendor Management',
+            icon: 'featureIconEight',
+          },
+        ],
+      ],
+    },
+    {
+      id: 'cybersecurity',
+      title: 'Cybersecurity & Risk Management',
+      description: 'Your business is only as strong as your security posture. We protect your digital assets with end-to-end cybersecurity frameworks and compliance-driven solutions.',
+      icon: 'serviceIconThree',
+      features: [
+        [
+          {
+            id: 'vulnerability',
+            text: 'Vulnerability & Threat Management',
+            icon: 'featureIconFive',
+          },
+          {
+            id: 'identity',
+            text: 'Identity and Access Management',
+            icon: 'featureIconSix',
+          },
+        ],
+        [
+          {
+            id: 'security-compliance',
+            text: 'Security Compliance (FCA, PCI DSS v4, GDPR)',
+            icon: 'featureIconSeven',
+          },
+          {
+            id: 'awareness-training',
+            text: 'Awareness & Training for Teams',
+            icon: 'featureIconEight',
+          },
+          {
+            id: 'privilege-access-management',
+            text: 'Privilege Access Management',
+            icon: 'featureIconEight',
+          },
+          {
+            id: 'ci-cd',
+            text: 'Secure CI/CD Pipelines',
+            icon: 'featureIconEight',
+          },
+        ],
+      ],
+    },
+    {
+      id: 'data-analytics',
+      title: 'Data Analytics & Business Intelligence',
+      description: 'Turn data into decisions. We design analytics frameworks that reveal opportunities, predict trends, and measure success.',
+      icon: 'serviceIconTwo',
+      features: [
+        [
+          {
+            id: 'data-strategy',
+            text: 'Data Strategy & Architecture',
+            icon: 'featureIconFive',
+          },
+          {
+            id: 'predictive-analytics',
+            text: 'Custom Reporting & Data Visualization',
             icon: 'featureIconSix',
           },
         ],

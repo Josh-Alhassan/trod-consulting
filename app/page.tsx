@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation"
 import Hero from "./section/hero/Hero"
 import AboutUs from "./section/aboutUs/AboutUs"
 import OurServices from "./section/ourServices/OurServices"
+import WhyChooseUs from "./section/whyChooseUs/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <AboutUs />
         <OurServices />
+        <WhyChooseUs />
     </>
   );
 }

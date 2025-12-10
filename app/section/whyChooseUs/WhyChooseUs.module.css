@@ -1,0 +1,63 @@
+.backgroundContainer {
+    /* background-color: orange; */
+}
+
+.chooseUsImageWrapper {
+    padding: 5px;
+}
+
+.chooseUsWrapper {
+    padding: 10px;
+}
+
+.chooseUsTypography {
+    padding: 10px 0;
+}
+
+.chooseUsTypography p {
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+.bookCallLink {
+    display: inline-block;
+    padding: 20px 15px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+
+    margin: 15px 0;
+}
+
+.chooseUsPoints {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+
+    font-size: 1.4em;
+}
+
+.point {
+    display: flex;
+    gap: 6px;
+
+    border-left: 3px solid #000;
+    padding: 15px 10px;
+}
+
+.pointTitle {
+    font-weight: 700;
+
+}
+
+.pointDescription {
+    margin-top: 14px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.chooseUsPointFooter {
+    background: indianred;
+}

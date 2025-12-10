@@ -30,11 +30,6 @@
     height: auto;
 }
 
-/* .featureIcon {
-    width: 15px;
-    height: auto;
-} */
-
 .servicePagination {
     color: #fff;
 }
@@ -87,7 +82,7 @@
 }
 
 .serviceButton2 {
-    visibility: hidden;
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -104,6 +99,11 @@
 
     .serviceButton {
         width: 40%;
+    }
+
+    .serviceButton2 {
+        display: block;
+        visibility: hidden;
     }
     
 }
