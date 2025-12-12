@@ -1,9 +1,11 @@
-.container {
-    background: #FAFAFA;
+.backgroundContainer {
+     background: #FAFAFA;
+}
 
+.container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3erem 1rem;
+  padding: 3rem 1rem;
 
 }
 
@@ -109,6 +111,10 @@
 }
 
 @media (min-width: 768px) {
+
+    .container {
+        padding: 3rem 2rem;
+    }
     .imageContainer {
         grid-template-columns: 2fr 1fr;
 
@@ -125,6 +131,11 @@
 }
 
 @media (min-width: 1024) {
+
+    .container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     .imageText {
         font-size: 1.6em;
     }

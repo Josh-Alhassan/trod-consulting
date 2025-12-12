@@ -12,32 +12,35 @@ import styles from "./AboutUs.module.css";
 
 export default function AboutUs() {
   return (
-    <section className={`${styles.container} containerSection`}>
+    <section className={styles.backgroundContainer} aria-label="About Us">
+      <div className={`${styles.container} containerSection`}>
 
-      {/* Text Block */}
-      <AboutTextBlock />
+        {/* Text Block */}
+        <AboutTextBlock />
 
-      {/* Two-column images */}
-      <div className={styles.imageContainer}>
-        {/* <AboutImageLeft />
-          <AboutImageRight /> */}
+        {/* Two-column images */}
+        <div className={styles.imageContainer}>
+          {/* <AboutImageLeft />
+            <AboutImageRight /> */}
 
-        <div className={styles.imageLeft}>
-          <p className={styles.imageText}>We partner with forward-thinking businesses to turn complexity into clarity — crafting strategies that deliver measurable, lasting impact.</p>
-        </div>
-        <div className={styles.imageRight}>
-          <div className={styles.shieldContainer}>
-            <Image className={`${styles.securityShield} ${styles.shield1}`} src={securityShield1} alt="Security Shield" />
-            <Image className={`${styles.securityShield} ${styles.shield2}`} src={securityShield2} alt="Security Shield" />
-            <Image className={`${styles.securityShield} ${styles.shield3}`} src={securityShield3} alt="Security Shield" />
-
+          <div className={styles.imageLeft}>
+            <p className={styles.imageText}>We partner with forward-thinking businesses to turn complexity into clarity — crafting strategies that deliver measurable, lasting impact.</p>
           </div>
+          <div className={styles.imageRight}>
+            <div className={styles.shieldContainer}>
+              <Image className={`${styles.securityShield} ${styles.shield1}`} src={securityShield1} alt="Security Shield" />
+              <Image className={`${styles.securityShield} ${styles.shield2}`} src={securityShield2} alt="Security Shield" />
+              <Image className={`${styles.securityShield} ${styles.shield3}`} src={securityShield3} alt="Security Shield" />
 
-          <p className={styles.cybersecurityText}>We ‘re
-            obsessed with
-            cybersecurity</p>
+            </div>
+
+            <p className={styles.cybersecurityText}>We ‘re
+              obsessed with
+              cybersecurity</p>
+          </div>
         </div>
       </div>
+
     </section>
   );
 }

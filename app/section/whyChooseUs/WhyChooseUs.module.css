@@ -61,3 +61,36 @@
 .chooseUsPointFooter {
     background: indianred;
 }
+
+@media (min-width: 768px) {
+    .bookCallLink {
+        width: auto;
+    }
+
+    .chooseUsPoints {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bookCallLink {
+        width: 100%;
+    }
+    .chooseUsWrapper {
+        display: flex;
+        /* gap: 50px; */
+        justify-content: space-between;
+
+        margin-top: 50px;
+    }
+
+    .chooseUsTypography {
+        width: 35%
+    }
+
+    .chooseUsPoints {
+        width: 55%;
+    }
+}
