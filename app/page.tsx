@@ -5,6 +5,7 @@ import Hero from "./section/hero/Hero"
 import AboutUs from "./section/aboutUs/AboutUs"
 import OurServices from "./section/ourServices/OurServices"
 import WhyChooseUs from "./section/whyChooseUs/WhyChooseUs";
+import OurApproach from "./section/ourApproach/OurApproach";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutUs />
         <OurServices />
         <WhyChooseUs />
+        <OurApproach />
     </>
   );
 }
