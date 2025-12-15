@@ -1,0 +1,90 @@
+/* Layout */
+.workShow {
+  --grid-gap: 1rem;
+  --card-padding: 2rem;
+  --card-max-width: 22rem;
+  --card-height: 15.2rem;
+}
+
+.workShowContent {
+    max-width: 439px;
+}
+
+.workShowText {
+    font-size: 1.2em;
+}
+
+.workShowGrid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.workShowItem h3 {
+    width: 152px;
+    margin-top: 20px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+    
+
+.workShowItem1 {
+    background-color: #FFF5E9;
+}
+
+.workShowItem2 {
+    background-color: #FFFCE9;
+}
+
+.workShowItem3 {
+    background-color: #E9FFFB;
+}
+
+.workShowItem4 {
+    background-color: #E9F2FF;
+}
+
+.workShowItem5 {
+    background-color: #FFE9F5;
+}
+
+.workShowItem {
+    max-width: 352px;
+    height: 243px;
+    /* background-color: orange; */
+
+    padding: 97px 29px;
+}
+
+.workShowItem p {
+    width: 152px;
+    margin-top: 20px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+@media (min-width: 768) {
+    .workShowText {
+        font-size: 1.6em;
+    }
+
+    .workShowGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+  .workShowGrid {
+    grid-template-columns: repeat(4, 1fr); /* 3 columns on desktops */
+  }
+}
+
+@media (min-width: 1440px) {
+  .workShowGrid {
+    grid-template-columns: repeat(5, 1fr); /* 3 columns on desktops */
+    gap: 0;
+  }
+}

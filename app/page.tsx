@@ -6,6 +6,7 @@ import AboutUs from "./section/aboutUs/AboutUs"
 import OurServices from "./section/ourServices/OurServices"
 import WhyChooseUs from "./section/whyChooseUs/WhyChooseUs";
 import OurApproach from "./section/ourApproach/OurApproach";
+import WorkShow from "./section/workShow/WorkShow";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <OurServices />
         <WhyChooseUs />
         <OurApproach />
+        <WorkShow />
     </>
   );
 }
