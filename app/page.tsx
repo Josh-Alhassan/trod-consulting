@@ -8,6 +8,7 @@ import WhyChooseUs from "./section/whyChooseUs/WhyChooseUs";
 import OurApproach from "./section/ourApproach/OurApproach";
 import WorkShow from "./section/workShow/WorkShow";
 import CaseStudy from "./section/caseStudy/CaseStudy";
+import Testimonials from "./section/testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <OurApproach />
         <WorkShow />
         <CaseStudy />
+        <Testimonials />
     </>
   );
 }
