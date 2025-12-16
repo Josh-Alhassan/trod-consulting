@@ -8,10 +8,17 @@
 
 .workShowContent {
     max-width: 439px;
+    margin-top: 20px;
+}
+
+.workShowHeading {
+    margin-bottom: 5px;
 }
 
 .workShowText {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: 500;
+    opacity: .6;
 }
 
 .workShowGrid {

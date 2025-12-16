@@ -1,0 +1,289 @@
+.backgroundContainer {
+    background-color: #FAFAFA;
+    overflow: hidden;
+}
+
+.caseStudy {
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.caseStudyContent {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.caseStudyTextContainer {
+    max-width: 500px;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.caseStudyHeading {
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.caseStudyText {
+    font-weight: 500;
+    font-size: 1.4em;
+    opacity: 0.6;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.caseStudyNext {
+    border: 3px solid #ffffff;
+    background-color: #08080D;
+    padding: 20px 15px;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border: none;
+}
+
+.caseStudyNext:hover {
+    background-color: #2270FF;
+}
+
+.caseStudyNext:focus {
+    outline: 2px solid #2270FF;
+    outline-offset: 2px;
+}
+
+.caseStudyOutcomeContainer {
+    margin-top: 51px;
+    display: grid;
+    gap: 10px;
+    position: relative;
+    min-height: 600px; /* Adjust based on your content */
+}
+
+.caseStudyOutcome,
+.caseStudyTestimony,
+.caseStudyOutcomeImage {
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.caseStudyOutcome {
+    background-color: #fff;
+    padding: 57px 47px;
+    position: relative;
+    z-index: 1;
+}
+
+.caseStudyOutcomeSubheader {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.caseStudyOutcomeList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.caseStudyOutcomeItem {
+    font-weight: 600;
+    font-size: 1.3em;
+    display: flex;
+    gap: 10px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.caseStudyOutcomeItem:last-child {
+    margin-bottom: 0;
+}
+
+.caseStudyOutcomeItem span {
+    display: inline-flex;
+    margin-top: 4px;
+}
+
+.caseStudyTestimony {
+    padding: 57px 47px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.caseStudyTestimonyText {
+    margin-top: 20px;
+    font-size: 1.8em;
+    font-weight: 500;
+    opacity: 0.6;
+    line-height: 1.4;
+}
+
+.caseStudyOutcomeImage {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caseStudyImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.caseStudyOutcomeImage:hover .caseStudyImage {
+    transform: scale(1.02);
+}
+
+.caseStudyOutcomeImage::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.36%, #000000 100%);
+    pointer-events: none;
+}
+
+.caseStudyOutcomeImage p {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+    width: 120px;
+    line-height: 1;
+    z-index: 2;
+    margin: 0;
+    text-align: right;
+}
+
+/* Animation classes */
+.slideIn {
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.slideOut {
+    animation: slideOut 0.5s ease-in-out forwards;
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fadeOut {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .caseStudyNext {
+        width: 250px;
+    }
+
+    .caseStudyOutcomeContainer {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .caseStudyOutcome,
+    .caseStudyTestimony {
+        padding: 40px;
+    }
+
+    .caseStudyOutcomeImage {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .caseStudyContent {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .caseStudyTextContainer {
+        max-width: 524px;
+    }
+
+    .caseStudyText {
+        font-size: 1.6em;
+    }
+
+    .caseStudyOutcomeContainer {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+
+    .caseStudyOutcome,
+    .caseStudyTestimony {
+        padding: 57px 47px;
+    }
+
+    .caseStudyOutcome {
+        grid-column: 1 / span 2;
+        grid-row: 1/ 2;
+    }
+
+    .caseStudyTestimony {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    .caseStudyOutcomeImage {
+        grid-column: 3 / -1;
+        grid-row: 1 / 3;
+        height: auto;
+    }
+}
