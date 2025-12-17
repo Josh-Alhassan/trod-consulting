@@ -1,0 +1,258 @@
+.backgroundContainer {
+    background-color: #08080D;
+    color: #fff;
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.contactSubheading {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contactDetails {
+    /* background-color: orange; */
+}
+
+.contactHeading {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contactText {
+    font-size: 1.2em;
+    font-weight: 500;
+    opacity: .8;
+
+}
+
+.contactFooter {
+    margin-top: 20px;
+}
+
+.contactFooterProfile {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #FFFFFF
+}
+
+.contactFooterProfile:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.contactsubTitle {
+    font-size: 1.0em;
+    font-weight: 300;
+    color: #fff;
+    opacity: .8;
+}
+
+.contactMaintitle {
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+.contactSocials {
+    display: flex;
+    gap: 16px;
+
+    margin-top: 10px;
+}
+
+.contactSocials img {
+    width: 15px;
+}
+
+
+.contactForms {
+    background-color: #141416;
+    padding: 20px;
+}
+
+.contactFormHeader {
+    margin-bottom: 40px;
+}
+
+.contactFormHeading {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.formField label {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.formInput {
+    background-color: #19191B;
+    padding: 15px 15px;
+    outline: none;
+    border: none;
+    font-size: 1.3em;
+}
+
+.formButton {
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #08080D;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.copyRight {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.copyrightTitle {
+    font-size: 1.4em;
+}
+
+.copyrightText {
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+    opacity: .8;
+}
+
+.bottomSheet {
+    display: none;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .contact {
+        position: relative;
+    }
+    .contactSection {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contactDetails {
+        width: 35%; 
+    }
+
+    .contactForms {
+        width: 40%;
+    }
+
+    .outOfFlowIcon {
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+        background-color: #075BF7;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+
+    .outOfFlowIcon.active {
+        background-color: #000000;
+    }
+
+    .outOfFlowIcon .arrowIcon {
+        transition: transform 0.3s ease;
+    }
+
+    .outOfFlowIcon.active .arrowIcon {
+        transform: rotate(180deg);
+        color: #ffffff;
+    }
+
+    /* Bottom Sheet Styles */
+    .bottomSheet {
+        display: block;
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        background: #000000;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        transition: bottom 0.3s ease-out;
+    }
+
+    .bottomSheetOpen {
+        bottom: 0;
+    }
+
+    .bottomSheetContent {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .bottomSheetNav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .navLink {
+        color: #ffffff;
+        opacity: .6;
+        text-decoration: none;
+        font-size: 1.8em;
+        padding: 10px 0;
+        transition: color 0.2s ease;
+    }
+
+    .navLink:hover {
+        color: #075BF7;
+    }
+
+    @media (min-width: 768px) {
+        .bottomSheetNav {
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .contactText {
+        font-size: 1.4em;
+    }
+
+    .contactsubTitle {
+        font-size: 1.2em;
+    }
+
+    .contactMaintitle  {
+        font-size: 1.6em;
+    }
+
+    .contactFormHeading {
+        font-size: 2.2em;
+    }
+
+    .formField label {
+        font-size: 1.4em;
+    }
+}

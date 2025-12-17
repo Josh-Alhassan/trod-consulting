@@ -9,6 +9,7 @@ import OurApproach from "./section/ourApproach/OurApproach";
 import WorkShow from "./section/workShow/WorkShow";
 import CaseStudy from "./section/caseStudy/CaseStudy";
 import Testimonials from "./section/testimonials/Testimonials";
+import Contact from "./section/contact/Contact";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <WorkShow />
         <CaseStudy />
         <Testimonials />
+        <Contact />
     </>
   );
 }

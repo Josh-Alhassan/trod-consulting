@@ -61,20 +61,20 @@ export default function Testimonials() {
                             </div>
 
                             {/* Third Testimonial */}
-                            {/* <div className={styles.testimonialItem}>
+                            <div className={styles.testimonialItem}>
                                 <div className={styles.testimonialImage}>
-                                    <Image src={davidCraig} alt="David Craig" />
+                                    <Image src={alhassanJoshua} alt="Joshua Alhassan" />
                                 </div>
                                 <p className={styles.testimonialText}>TROD Consulting completely transformed our approach to IT and data. Their team understood our business challenges and delivered practical, scalable solutions.</p>
 
                                 <div className={styles.testimonialFooter}>
-                                    <p className={styles.testimonialAuthor}>David Craig</p>
+                                    <p className={styles.testimonialAuthor}>Joshua Alhassan</p>
                                     <p className={styles.testimonialTitle}>Director/ CTO - New Moves</p>
                                     <div className={styles.testimonialSignature}>
-                                        <Image src={davidSignature} alt="David Signature" />
+                                        <Image src={joshuaSignature} alt="Joshua Signature" />
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
 
                         <div className={styles.testimonialButtons}>
