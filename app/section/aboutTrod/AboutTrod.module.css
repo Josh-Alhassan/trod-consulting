@@ -1,0 +1,112 @@
+.trodConsultingsubTitle {
+    margin-bottom: 24px;
+}
+
+.trodConsultingContent {
+    max-width: 623px;
+}
+
+.trodConsultingText {
+    margin-top: -10px;
+    opacity: .6;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+.trodConsultingGridContainer {
+    margin-top: 50px;
+    display: grid;
+    gap: 10px;
+}
+
+.trodConsultingGridItem {
+    padding: 20px;
+}
+
+.trodConsultingsubTitle {
+    font-size: 1.1em;
+}
+
+.trodHistory {
+    background: linear-gradient(180deg, #060606 0%, #0F0F10 100%), url('../../../public/texture.png');
+    background-size: cover;
+}
+
+.gridItemText {
+    color: #fff;
+    font-size: 1.4em;
+    opacity: .9;
+    font-weight: 500;
+
+    margin-top: 20px;
+
+    text-align: justify;
+}
+
+.trodConsultingGridItem {
+    height: max-content;
+    position: relative;
+}
+
+.trodBadge {
+    position: absolute;
+    top: -35px;
+    right: 25px;
+}
+
+.whiteBackground {
+    background-color: #fff;
+}
+
+.blueBackground {
+    background-color: #048FFF;
+    color: #fff;
+}
+
+.ourMissionText {
+    font-size: 1.4em;
+    margin-top: 32px;
+    opacity: .8;
+    font-weight: 600;
+}
+
+.whitesubHeader {
+    color: #fff;
+}
+
+.securityShield {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .trodConsultingGridContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px
+    }
+
+    .trodHistory {
+        grid-column: 1 / 4;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .trodHeading {
+        font-size: 4.8em !important;
+    }
+    .trodConsultingText {
+        font-size: 1.6em;
+    }
+
+    .gridItemText {
+        font-size: 1.8em;
+    }
+
+    .trodConsultingGridItem {
+        padding: 40px;
+    }
+
+    .trodConsultingsubTitle {
+    font-size: 1.4em;
+}
+}

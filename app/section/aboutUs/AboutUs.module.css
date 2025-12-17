@@ -51,8 +51,9 @@
 .imageRight {
     background-image: url(../../../public/images/layerBlur.svg);
     background-color: rgba(0, 0, 255, 0.701);
-    height: 300px;
     position: relative;
+
+    height: 400px;
 }
 
 .cybersecurityText {
@@ -127,6 +128,10 @@
 
  .securityShield {
     width: 138px
+ }
+
+ .imageRight {
+    height: auto;
  }
 }
 

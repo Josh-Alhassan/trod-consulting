@@ -9,7 +9,7 @@ const ContactForm = () => (
       <h3 className={styles.contactFormHeading}>Request Proposal</h3>
     </div>
 
-    <form className={styles.formContainer}>
+    <form className={styles.formContainer} action='https://formspree.io/f/xldqqyrq' method='POST'>
       <FormField 
         id="fullName" 
         label="Full Name" 

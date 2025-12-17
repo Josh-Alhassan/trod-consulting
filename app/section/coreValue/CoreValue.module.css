@@ -1,0 +1,95 @@
+.backgroundContainer {
+    background-color: #05044F;
+    color: #fff;
+}
+
+.corevaluesubTitle {
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+
+
+/* .coreValueHeaderSection {
+
+} */
+
+.corevalueContent {
+    max-width: 623px;
+    color: #fff;
+}
+
+.coreValueText {
+    margin-top: -10px;
+    opacity: .6;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+.gridContainer {
+    margin-top: 40px;
+
+    display: grid;
+    row-gap: 10px;
+}
+
+.gridItem {
+    padding: 30px 20px;
+    background-color: #0A096D;
+    color: #fff;
+}
+
+.gridItemContent {
+    margin-top: 20px;
+}
+
+.gridItemContent h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.gridItemContent p {
+    opacity: .8;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+.gridItemImage {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+
+    .coreValueText {
+        font-size: 1.8em;
+    }
+
+    .gridContainer {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .gridItem {
+        padding: 75px 40px;
+    }
+
+    .gridItemContent h3 {
+        font-size: 2em;
+    }
+
+    .gridItemContent p {
+        font-size: 1.6em;
+    }
+    .gridItemImage {
+        width: 90px;
+        height: 72px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gridContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
