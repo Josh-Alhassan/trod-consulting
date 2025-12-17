@@ -13,15 +13,18 @@ export default function Hero() {
 
                 {/* Video Container */}
                 <div className={styles.videoContainer}>
-                {/* <video className={styles.video} src={video} autoPlay loop muted>
+                <video className={styles.video} src={video} autoPlay loop muted playsInline>
                     Your browser does not support the video tag.
-                </video> */}
+                </video>
 
-                <h1 className={styles.heroTitle}>Simplifying and
+                <div className={styles.overlay}></div>
+
+                <div className={styles.content}>
+                    <h1 className={styles.heroTitle}>Simplifying and
 driving businesses, delivering results</h1>
 
                     <p className={styles.heroText}>We combine strategy, technology, and innovation to help organisations unlock growth, enhance efficiency, and thrive in a connected world.</p>
-                <div className={styles.overlay}></div>
+                </div>
             </div>
             </HeroBackground>
 
