@@ -65,14 +65,14 @@ export default function Navigation() {
                                 </defs>
                             </svg>
 
-                            <span className={styles.logoText}>TROD</span>
+                            <span className={styles.logoText}><a href='/'>TROD</a></span>
                         </div>
 
                         {/* Desktop Navigation */}
                         <div className={styles.desktopNav}>
                             <a href="#services" className={styles.navLink}>Our Services</a>
                             <a href="#studies" className={styles.navLink}>Case Study</a>
-                            <a href="#about" className={styles.navLink}>About Us</a>
+                            <a href="/aboutUs" className={styles.navLink}>About Us</a>
                         </div>
                     </div>
 
@@ -111,7 +111,7 @@ export default function Navigation() {
                         <a href="#studies" className={styles.mobileNavLink} onClick={toggleMenu}>
                             Case Study
                         </a>
-                        <a href="#about" className={styles.mobileNavLink} onClick={toggleMenu}>
+                        <a href="/aboutUs" className={styles.mobileNavLink} onClick={toggleMenu}>
                             About Us
                         </a>
                         <button className={styles.ctaButton}>Get In Touch</button>

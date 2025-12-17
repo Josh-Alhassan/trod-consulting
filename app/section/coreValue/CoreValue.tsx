@@ -3,7 +3,7 @@ import SectionSubheader from "@/app/components/SectionSubheader"
 import Image from "next/image"
 import styles from './CoreValue.module.css'
 
-import clarity from '@/public/coreValues/clarity.svg'
+import clarity from '@/public/coreValues/clariry.svg'
 import innovation from '@/public/coreValues/innovation.svg'
 import integrity from '@/public/coreValues/intergrity.svg'
 import excellence from '@/public/coreValues/excellence.svg'
