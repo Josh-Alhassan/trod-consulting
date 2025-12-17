@@ -5,7 +5,7 @@ import styles from './CoreValue.module.css'
 
 import clarity from '@/public/coreValues/clarity.svg'
 import innovation from '@/public/coreValues/innovation.svg'
-import integrity from '@/public/coreValues/integrity.svg'
+import integrity from '@/public/coreValues/intergrity.svg'
 import excellence from '@/public/coreValues/excellence.svg'
 import collaboration from '@/public/coreValues/collaboration.svg'
 import improvement from '@/public/coreValues/improvement.svg'
