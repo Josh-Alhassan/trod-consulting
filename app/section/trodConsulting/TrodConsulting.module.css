@@ -1,0 +1,39 @@
+.backgroundContainer {
+    background-color: #000000;
+    color: #fff;
+}
+
+.trodConsulting {
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trodConsultingContent {
+    max-width: 551px;
+}
+
+.trodHeading {
+    font-size: 4.2em;
+}
+
+.trodText {
+    font-size: 1.4em;
+    opacity: .89;
+    font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+    .trodConsultingContent {
+        max-width: 604px;
+    }
+    .trodHeading {
+        font-size: 5.2em;
+    }
+
+    .trodText {
+        font-size: 1.6em;
+    }
+}

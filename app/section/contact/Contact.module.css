@@ -181,6 +181,10 @@
         color: #ffffff;
     }
 
+    .copyRight {
+        margin-bottom: 100px;
+    }
+
     /* Bottom Sheet Styles */
     .bottomSheet {
         display: block;
