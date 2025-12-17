@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import React, { FC, ReactNode } from 'react';
 import styles from './Heading.module.css';
 
 type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
@@ -48,7 +48,7 @@ const Heading: FC<HeadingProps> = ({
   id,
   ...props
 }) => {
-  const Tag = level as keyof JSX.IntrinsicElements;
+  const Tag = level as keyof React.JSX.IntrinsicElements;
   
   return (
     <Tag 
