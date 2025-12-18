@@ -1,0 +1,240 @@
+.wavyBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    border-radius: 0.625rem;
+    background: radial-gradient(ellipse at center, rgba(7, 91, 247, 0.05) 0%, transparent 70%);
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    opacity: 0.6;
+}
+
+.wave:nth-child(1) {
+    top: 20%;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(7, 91, 247, 0.4) 10%, 
+        rgba(7, 91, 247, 0.3) 30%, 
+        rgba(7, 91, 247, 0.6) 50%, 
+        rgba(7, 91, 247, 0.3) 70%, 
+        rgba(7, 91, 247, 0.3) 90%, 
+        transparent 100%);
+    animation: frequency1 3s ease-in-out infinite;
+    filter: blur(2px);
+}
+
+.wave:nth-child(2) {
+    top: 40%;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(7, 91, 247, 0.3) 15%, 
+        rgba(7, 91, 247, 0.3) 35%, 
+        rgba(7, 91, 247, 0.5) 55%, 
+        rgba(7, 91, 247, 0.3) 75%, 
+        rgba(7, 91, 247, 0.2) 95%, 
+        transparent 100%);
+    animation: frequency2 2.5s ease-in-out infinite;
+    animation-delay: -0.5s;
+    filter: blur(3px);
+}
+
+.wave:nth-child(3) {
+    top: 60%;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(7, 91, 247, 0.3) 20%, 
+        rgba(7, 91, 247, 0.7) 40%, 
+        rgba(7, 91, 247, 0.6) 60%, 
+        rgba(7, 91, 247, 0.4) 80%, 
+        transparent 100%);
+    animation: frequency3 3.5s ease-in-out infinite;
+    animation-delay: -1s;
+    filter: blur(2.5px);
+}
+
+.wave:nth-child(4) {
+    top: 80%;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(7, 91, 247, 0.3) 12%, 
+        rgba(7, 91, 247, 0.5) 32%, 
+        rgba(7, 91, 247, 0.6) 52%, 
+        rgba(7, 91, 247, 0.5) 72%, 
+        rgba(7, 91, 247, 0.3) 92%, 
+        transparent 100%);
+    animation: frequency4 2.8s ease-in-out infinite;
+    animation-delay: -1.5s;
+    filter: blur(3.5px);
+}
+
+@keyframes frequency1 {
+    0%, 100% {
+        transform: scaleY(1) translateX(0);
+        height: 3px;
+    }
+    10% {
+        transform: scaleY(8) translateX(10%);
+        height: 4px;
+    }
+    25% {
+        transform: scaleY(3) translateX(25%);
+        height: 3px;
+    }
+    40% {
+        transform: scaleY(12) translateX(40%);
+        height: 5px;
+    }
+    55% {
+        transform: scaleY(2) translateX(55%);
+        height: 3px;
+    }
+    70% {
+        transform: scaleY(10) translateX(70%);
+        height: 4px;
+    }
+    85% {
+        transform: scaleY(4) translateX(85%);
+        height: 3px;
+    }
+}
+
+@keyframes frequency2 {
+    0%, 100% {
+        transform: scaleY(1) translateX(0);
+        height: 3px;
+    }
+    15% {
+        transform: scaleY(6) translateX(-15%);
+        height: 4px;
+    }
+    30% {
+        transform: scaleY(11) translateX(-30%);
+        height: 5px;
+    }
+    45% {
+        transform: scaleY(3) translateX(-45%);
+        height: 3px;
+    }
+    60% {
+        transform: scaleY(9) translateX(-60%);
+        height: 4px;
+    }
+    75% {
+        transform: scaleY(2) translateX(-75%);
+        height: 3px;
+    }
+    90% {
+        transform: scaleY(7) translateX(-90%);
+        height: 4px;
+    }
+}
+
+@keyframes frequency3 {
+    0%, 100% {
+        transform: scaleY(1) translateX(0);
+        height: 3px;
+    }
+    12% {
+        transform: scaleY(10) translateX(12%);
+        height: 5px;
+    }
+    28% {
+        transform: scaleY(4) translateX(28%);
+        height: 3px;
+    }
+    42% {
+        transform: scaleY(8) translateX(42%);
+        height: 4px;
+    }
+    58% {
+        transform: scaleY(13) translateX(58%);
+        height: 5px;
+    }
+    72% {
+        transform: scaleY(3) translateX(72%);
+        height: 3px;
+    }
+    88% {
+        transform: scaleY(6) translateX(88%);
+        height: 4px;
+    }
+}
+
+@keyframes frequency4 {
+    0%, 100% {
+        transform: scaleY(1) translateX(0);
+        height: 3px;
+    }
+    8% {
+        transform: scaleY(7) translateX(-8%);
+        height: 4px;
+    }
+    22% {
+        transform: scaleY(11) translateX(-22%);
+        height: 5px;
+    }
+    38% {
+        transform: scaleY(2) translateX(-38%);
+        height: 3px;
+    }
+    52% {
+        transform: scaleY(9) translateX(-52%);
+        height: 4px;
+    }
+    68% {
+        transform: scaleY(4) translateX(-68%);
+        height: 3px;
+    }
+    82% {
+        transform: scaleY(12) translateX(-82%);
+        height: 5px;
+    }
+    95% {
+        transform: scaleY(3) translateX(-95%);
+        height: 3px;
+    }
+}
+
+/* Tablet and larger screens - more pronounced waves */
+@media (min-width: 640px) {
+    .wave {
+        height: 4px;
+        filter: blur(3px);
+    }
+    
+    .wave:nth-child(1) {
+        filter: blur(2.5px);
+    }
+    
+    .wave:nth-child(2) {
+        filter: blur(3.5px);
+    }
+    
+    .wave:nth-child(3) {
+        filter: blur(3px);
+    }
+    
+    .wave:nth-child(4) {
+        filter: blur(4px);
+    }
+}
+
+/* Desktop - even more dynamic */
+@media (min-width: 1024px) {
+    .wave {
+        height: 5px;
+    }
+    
+    .wavyBackground {
+        background: radial-gradient(ellipse at center, rgba(7, 91, 247, 0.08) 0%, transparent 70%);
+    }
+}

@@ -166,7 +166,7 @@ export default function CaseStudy() {
   };
 
   return (
-    <section className={styles.backgroundContainer} aria-labelledby="case-studies-heading">
+    <section id="studies" className={styles.backgroundContainer} aria-labelledby="case-studies-heading">
       <div className={`${styles.caseStudy} containerSection`}>
         <SectionSubheader>// Case Study</SectionSubheader>
 

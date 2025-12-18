@@ -14,7 +14,7 @@ const Contact = () => {
   };
 
   return (
-    <section className={styles.backgroundContainer} aria-labelledby="contact-heading">
+    <section id="contact" className={styles.backgroundContainer} aria-labelledby="contact-heading">
       <div className={`${styles.contact} containerSection`}>
         <div className={styles.contactSection}>
           <ContactInfo />

@@ -284,7 +284,7 @@ const OurServices = () => {
   };
 
   return (
-    <section className={styles.backgroundContainer} aria-label="Our Services">
+    <section id="services" className={styles.backgroundContainer} aria-label="Our Services">
       {services.map((service, index) => (
         <ServiceCard
           key={service.id}

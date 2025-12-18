@@ -10,6 +10,15 @@ export default function Navigation() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+        e.preventDefault();
+        const element = document.getElementById(targetId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        setIsMenuOpen(false);
+    };
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.container}>
@@ -70,15 +79,20 @@ export default function Navigation() {
 
                         {/* Desktop Navigation */}
                         <div className={styles.desktopNav}>
-                            <a href="#services" className={styles.navLink}>Our Services</a>
-                            <a href="#studies" className={styles.navLink}>Case Study</a>
+                            <a href="#services" className={styles.navLink} onClick={(e) => handleSmoothScroll(e, 'services')}>Our Services</a>
+                            <a href="#studies" className={styles.navLink} onClick={(e) => handleSmoothScroll(e, 'studies')}>Case Study</a>
                             <a href="/aboutUs" className={styles.navLink}>About Us</a>
                         </div>
                     </div>
 
                     {/* CTA Button Desktop */}
                     <div className={styles.desktopCta}>
-                        <button className={styles.ctaButton}>Get In Touch</button>
+                        <button className={styles.ctaButton} onClick={() => {
+                            const element = document.getElementById('contact');
+                            if (element) {
+                                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                        }}>Get In Touch</button>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -105,16 +119,22 @@ export default function Navigation() {
                 {/* Mobile Menu */}
                 {isMenuOpen && (
                     <div className={styles.mobileMenu}>
-                        <a href="#services" className={styles.mobileNavLink} onClick={toggleMenu}>
+                        <a href="#services" className={styles.mobileNavLink} onClick={(e) => handleSmoothScroll(e, 'services')}>
                             Our Services
                         </a>
-                        <a href="#studies" className={styles.mobileNavLink} onClick={toggleMenu}>
+                        <a href="#studies" className={styles.mobileNavLink} onClick={(e) => handleSmoothScroll(e, 'studies')}>
                             Case Study
                         </a>
                         <a href="/aboutUs" className={styles.mobileNavLink} onClick={toggleMenu}>
                             About Us
                         </a>
-                        <button className={styles.ctaButton}>Get In Touch</button>
+                        <button className={styles.ctaButton} onClick={() => {
+                            const element = document.getElementById('contact');
+                            if (element) {
+                                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                            setIsMenuOpen(false);
+                        }}>Get In Touch</button>
                     </div>
                 )}
             </div>
