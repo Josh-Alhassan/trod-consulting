@@ -97,7 +97,7 @@ export default function Testimonials() {
                             </div>
 
                             {/* Third Testimonial */}
-                            <div className={styles.testimonialItem}>
+                            {/* <div className={styles.testimonialItem}>
                                 <div className={styles.testimonialImage}>
                                     <Image src={alhassanJoshua} alt="Joshua Alhassan" />
                                 </div>
@@ -110,10 +110,10 @@ export default function Testimonials() {
                                         <Image src={joshuaSignature} alt="Joshua Signature" />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Fourth Testimonial */}
-                            <div className={styles.testimonialItem}>
+                            {/* <div className={styles.testimonialItem}>
                                 <div className={styles.testimonialImage}>
                                     <Image src={davidCraig} alt="David Craig" />
                                 </div>
@@ -126,10 +126,10 @@ export default function Testimonials() {
                                         <Image src={davidSignature} alt="Sarah Signature" />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Fifth Testimonial */}
-                            <div className={styles.testimonialItem}>
+                            {/* <div className={styles.testimonialItem}>
                                 <div className={styles.testimonialImage}>
                                     <Image src={alhassanJoshua} alt="Michael Chen" />
                                 </div>
@@ -142,10 +142,10 @@ export default function Testimonials() {
                                         <Image src={joshuaSignature} alt="Michael Signature" />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Sixth Testimonial */}
-                            <div className={styles.testimonialItem}>
+                            {/* <div className={styles.testimonialItem}>
                                 <div className={styles.testimonialImage}>
                                     <Image src={davidCraig} alt="Emma Rodriguez" />
                                 </div>
@@ -158,7 +158,7 @@ export default function Testimonials() {
                                         <Image src={davidSignature} alt="Emma Signature" />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Seventh Testimonial */}
                             {/* <div className={styles.testimonialItem}>
