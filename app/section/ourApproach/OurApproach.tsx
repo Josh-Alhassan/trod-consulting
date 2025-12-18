@@ -69,7 +69,7 @@ const OurApproach: FC = () => {
       image: approach4,
       alt: 'Optimization icon',
       title: 'Optimize & Measure',
-      description: 'We refine continuously for performance and growth and ensure tangible results; cost savings, efficiency, and ROI.',
+      description: 'We refine continuously for performance and growth and ensure tangible results, cost savings, efficiency, and ROI.',
       className: styles.ourApproachBodyCard4
     }
   ];

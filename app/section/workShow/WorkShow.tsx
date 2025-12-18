@@ -28,17 +28,17 @@ const industryItems = [
   },
   {
     id: 4,
-    title: 'Healthcare & Life Science',
+    title: 'Healthcare',
     image: '/healthCare.svg',
     bgClass: styles.workShowItem4,
-    alt: 'Healthcare & Life Science icon'
+    alt: 'Healthcare icon'
   },
   {
     id: 5,
-    title: 'Public Sector & Government',
+    title: 'Local Authority',
     image: '/publicSector.svg',
     bgClass: styles.workShowItem5,
-    alt: 'Public Sector & Government icon'
+    alt: 'Local Authority icon'
   }
 ] as const;
 
@@ -75,7 +75,7 @@ export default function WorkShow() {
 
         <header className={styles.workShowContent}>
           <Heading className={styles.workShowHeading} id="work-show-heading">
-            Industries we serve
+            Industries we have served
           </Heading>
           <p className={styles.workShowText}>
             We've delivered value across diverse industries where precision, compliance, and innovation matter most

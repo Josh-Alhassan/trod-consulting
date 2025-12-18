@@ -19,6 +19,17 @@ import featureIcon6 from '@/public/featureIcon6.svg';
 import featureIcon7 from '@/public/featureIcon7.svg';
 import featureIcon8 from '@/public/featureIcon8.svg';
 
+import threat from '@/public/threat.svg'
+import identity from '@/public/indentity.svg'
+import security from '@/public/security.svg'
+import awareness from '@/public/awareness.svg'
+import privillege from '@/public/privillege.svg'
+import secure from '@/public/secure.svg'
+import data from '@/public/data.svg'
+import business from '@/public/business.svg'
+import predictive from '@/public/predictive.svg'
+import report from '@/public/report.svg'
+
 const icons = {
   serviceIconOne,
   serviceIconTwo,
@@ -31,6 +42,16 @@ const icons = {
   featureIconSix: featureIcon6,
   featureIconSeven: featureIcon7,
   featureIconEight: featureIcon8,
+  threat,
+  identity,
+  security,
+  awareness,
+  privillege,
+  secure,
+  data,
+  business,
+  predictive,
+  report,
 } as const;
 
 interface ServiceFeature {
@@ -212,34 +233,34 @@ const OurServices = () => {
           {
             id: 'vulnerability',
             text: 'Vulnerability & Threat Management',
-            icon: 'featureIconFive',
+            icon: 'threat',
           },
           {
             id: 'identity',
             text: 'Identity and Access Management',
-            icon: 'featureIconSix',
+            icon: 'identity',
           },
         ],
         [
           {
             id: 'security-compliance',
             text: 'Security Compliance (FCA, PCI DSS v4, GDPR)',
-            icon: 'featureIconSeven',
+            icon: 'security',
           },
           {
             id: 'awareness-training',
             text: 'Awareness & Training for Teams',
-            icon: 'featureIconEight',
+            icon: 'awareness',
           },
           {
             id: 'privilege-access-management',
             text: 'Privilege Access Management',
-            icon: 'featureIconEight',
+            icon: 'privillege',
           },
           {
             id: 'ci-cd',
             text: 'Secure CI/CD Pipelines',
-            icon: 'featureIconEight',
+            icon: 'secure',
           },
         ],
       ],
@@ -254,25 +275,30 @@ const OurServices = () => {
           {
             id: 'data-strategy',
             text: 'Data Strategy & Architecture',
-            icon: 'featureIconFive',
+            icon: 'data',
           },
           {
             id: 'predictive-analytics',
             text: 'Custom Reporting & Data Visualization',
-            icon: 'featureIconSix',
+            icon: 'report',
           },
         ],
         [
           {
             id: 'it-architecture',
-            text: 'IT Architecture & Process Automation',
-            icon: 'featureIconSeven',
+            text: 'Business Intelligence Dashboards',
+            icon: 'business',
           },
-          {
-            id: 'software-evaluation',
-            text: 'Software Evaluation & Vendor Management',
-            icon: 'featureIconEight',
-          },
+          // {
+          //   id: 'predictive-model',
+          //   text: 'Predictive Analytics & Machine Learning Models',
+          //   icon: 'predictive',
+          // },
+          // {
+          //   id: 'software-evaluation',
+          //   text: 'Software Evaluation & Vendor Management',
+          //   icon: featureIcon8,
+          // }
         ],
       ],
     },

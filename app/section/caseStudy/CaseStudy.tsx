@@ -17,7 +17,7 @@ const assets = {
     hsbc: require('@/public/logos/logo1.svg').default,
   },
   images: {
-    newnham: require('@/public/caseStudy/newhamImage.png').default,
+    newham: require('@/public/caseStudy/newhamImage.png').default,
     birmingham: require('@/public/caseStudy/birminghamCity.png').default,
     londonstockExchange: require('@/public/caseStudy/londonStockExchange.png').default,
     capita: require('@/public/caseStudy/capitaLondon.png').default,
@@ -73,11 +73,11 @@ interface CaseStudyItem {
 
 const CASE_STUDIES: CaseStudyItem[] = [
   {
-    id: 'newnham',
-    title: 'IT Modernisation for Newnham Borough',
+    id: 'newham',
+    title: 'IT Modernisation for Newham Borough',
     description: 'The London Borough of Newham partnered with TROD Consulting to upgrade its device ecosystem and prepare for a cloud-first environment.',
     logo: assets.logos.newham,
-    image: assets.images.newnham,
+    image: assets.images.newham,
     outcomes: [
       { icon: assets.icons.upgrade, text: 'Seamless upgrades to Windows 11 and Microsoft 365', alt: 'Upgrade' },
       { icon: assets.icons.hardware, text: 'Strategic replacement of incompatible hardware', alt: 'Hardware' },
@@ -85,7 +85,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
       { icon: assets.icons.cloud, text: 'Clear, actionable roadmap for cloud migration', alt: 'Cloud' }
     ],
     testimony: 'The London Borough of Newham partnered with TROD Consulting to upgrade its device ecosystem and prepare for a cloud-first environment.',
-    location: 'Newnham Borough'
+    location: 'Newham Borough'
   },
   {
     id: 'birmingham',
