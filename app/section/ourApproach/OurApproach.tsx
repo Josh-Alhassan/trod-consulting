@@ -65,10 +65,10 @@ const OurApproach: FC = () => {
       className: styles.ourApproachBodyCard3
     },
     {
-      id: 'optimize',
+      id: 'optimise',
       image: approach4,
       alt: 'Optimization icon',
-      title: 'Optimize & Measure',
+      title: 'Optimise & Measure',
       description: 'We refine continuously for performance and growth and ensure tangible results, cost savings, efficiency, and ROI.',
       className: styles.ourApproachBodyCard4
     }

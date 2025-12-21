@@ -6,7 +6,7 @@ import styles from './LogoItem.module.css';
 import hsbcLogo from '@/public/logos/logo1.svg';
 import legalLogo from '@/public/logos/logo2.svg';
 import newhamLogo from '@/public/logos/logo3.svg';
-import lsexhangeLogo from '@/public/logos/logo4.svg';
+import lsexhangeLogo from '@/public/images/lseg.png';
 import birminghamLogo from '@/public/logos/logo5.svg';
 import capitaLogo from '@/public/logos/logo6.svg';
 

@@ -153,12 +153,12 @@ const ServiceCard = ({
 
 const OurServices = () => {
   const services: Array<{
-  id: string;
-  title: string;
-  description: string;
-  icon: keyof typeof icons;
-  features: ServiceFeature[][];
-}> = [
+    id: string;
+    title: string;
+    description: string;
+    icon: keyof typeof icons;
+    features: ServiceFeature[][];
+  }> = [
     {
       id: 'business-consulting',
       title: 'Strategic business consulting',
@@ -253,18 +253,18 @@ const OurServices = () => {
             icon: 'awareness',
           },
         ],
-        [
-          {
-            id: 'privilege-access-management',
-            text: 'Privilege Access Management',
-            icon: 'privillege',
-          },
-          {
-            id: 'ci-cd',
-            text: 'Secure CI/CD Pipelines',
-            icon: 'secure',
-          },
-        ]
+          [
+            {
+              id: 'privilege-access-management',
+              text: 'Privilege Access Management',
+              icon: 'privillege',
+            },
+            {
+              id: 'ci-cd',
+              text: 'Secure CI/CD Pipelines',
+              icon: 'secure',
+            },
+        ],
       ],
     },
     {
@@ -281,26 +281,21 @@ const OurServices = () => {
           },
           {
             id: 'predictive-analytics',
-            text: 'Custom Reporting & Data Visualization',
+            text: 'Custom Reporting & Data Visualisation',
             icon: 'report',
           },
         ],
         [
           {
-            id: 'it-architecture',
+            id: 'business-intelligence',
             text: 'Business Intelligence Dashboards',
             icon: 'business',
           },
           {
             id: 'predictive-model',
-            text: 'Predictive Analytics & Machine Learning Models',
+            text: 'Predictive Analytics',
             icon: 'predictive',
           },
-          // {
-          //   id: 'software-evaluation',
-          //   text: 'Software Evaluation & Vendor Management',
-          //   icon: featureIcon8,
-          // }
         ],
       ],
     },

@@ -38,15 +38,7 @@
 
 .ourApproachBodySVG {
 
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-
-    /* filter: blur(5px); */
-
-    transform: translate(-50%, -50%);
-    /* z-index: -1 */
+    display: none;
 }
 
 .ourApproachBody {
@@ -85,6 +77,18 @@
         justify-content: space-between;
         row-gap: 70px;
         padding: 30px;
+    }
+
+    .ourApproachBodySVG {
+        display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+
+    /* filter: blur(5px); */
+
+    transform: translate(-50%, -50%);
+    /* z-index: -1 */
     }
 
     .ourApproachBodyCardImage {
