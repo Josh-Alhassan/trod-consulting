@@ -12,7 +12,7 @@ const assets = {
   logos: {
     newham: require('@/public/caseStudy/newhamLogo.png').default,
     birmingham: require('@/public/logos/logo5.svg').default,
-    londonstock: require('@/public/logos/logo4.svg').default,
+    londonstock: require('@/public/images/lseg.png').default,
     capita: require('@/public/logos/logo6.svg').default,
     hsbc: require('@/public/logos/logo1.svg').default,
   },
@@ -74,7 +74,7 @@ interface CaseStudyItem {
 const CASE_STUDIES: CaseStudyItem[] = [
   {
     id: 'newham',
-    title: 'IT Modernisation for Newham Borough',
+    title: 'IT Modernisation for the London Borough of Newham ',
     description: 'The London Borough of Newham partnered with TROD Consulting to upgrade its device ecosystem and prepare for a cloud-first environment.',
     logo: assets.logos.newham,
     image: assets.images.newham,
@@ -89,12 +89,12 @@ const CASE_STUDIES: CaseStudyItem[] = [
   },
   {
     id: 'birmingham',
-    title: 'Route & Cost Digitalisation for Birmingham City',
+    title: 'Route Change & Cost Digitalisation for Birmingham City Council',
     description: 'Birmingham City Council partnered with TROD Consulting to streamline route change processes, improve data accuracy, and enhance collaboration across teams.',
     logo: assets.logos.birmingham,
     image: assets.images.birmingham,
     outcomes: [
-      { icon: assets.icons.storage, text: 'Centralized all route change data in a single SharePoint system', alt: 'Storage' },
+      { icon: assets.icons.storage, text: 'Centralised all route change data in a single SharePoint system', alt: 'Storage' },
       { icon: assets.icons.automation, text: 'Ensured accurate, consistent data entry with Power Apps automation', alt: 'Automation' },
       { icon: assets.icons.calculations, text: 'Automated cost calculations for real-time visibility into changes', alt: 'Calculation' },
       { icon: assets.icons.workProcess, text: 'Reduced manual workload and costly errors through process automation', alt: 'Work Process' }
@@ -109,7 +109,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
     logo: assets.logos.londonstock,
     image: assets.images.londonstockExchange,
     outcomes: [
-      { icon: assets.icons.assets, text: 'Identified and prioritized vulnerabilities across all IT assets', alt: 'Assets' },
+      { icon: assets.icons.assets, text: 'Identified and prioritised vulnerabilities across all IT assets', alt: 'Assets' },
       { icon: assets.icons.monitor, text: 'Reduced potential breaches through proactive threat monitoring', alt: 'Monitor' },
       { icon: assets.icons.patchProcess, text: 'Automated vulnerability and patch management processes', alt: 'Patch Process' },
       { icon: assets.icons.workProcess, text: 'Delivered real-time security insights through advanced dashboards', alt: 'Work Process' },
@@ -125,10 +125,10 @@ const CASE_STUDIES: CaseStudyItem[] = [
     logo: assets.logos.capita,
     image: assets.images.capita,
     outcomes: [
-      { icon: assets.icons.rapidResponse, text: 'Real-time monitoring and rapid response with QROC SIEM', alt: 'Assets' },
+      { icon: assets.icons.rapidResponse, text: 'Real-time monitoring and rapid response with QROC (SIEM)', alt: 'Assets' },
       { icon: assets.icons.digitalGuardian, text: 'Enterprise-wide data loss prevention using Digital Guardian', alt: 'Digital Gaurdian' },
       { icon: assets.icons.scan, text: 'Continuous vulnerability scanning via Qualys', alt: 'Scan Process' },
-      { icon: assets.icons.defense, text: 'Improved cyber-resilience maturity and proactive defence', alt: 'Defense' },
+      { icon: assets.icons.defense, text: 'Improved cyber-resilience maturity and proactive defence', alt: 'Defence' },
       { icon: assets.icons.operations, text: 'Automated compliance checks and streamlined operations by 45%', alt: 'Operations' }
     ],
     testimony: 'TROD’s professionalism and clarity transformed how we manage technology across the organization.',

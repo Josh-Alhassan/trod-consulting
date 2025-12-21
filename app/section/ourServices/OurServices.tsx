@@ -252,6 +252,8 @@ const OurServices = () => {
             text: 'Awareness & Training for Teams',
             icon: 'awareness',
           },
+        ],
+        [
           {
             id: 'privilege-access-management',
             text: 'Privilege Access Management',
@@ -262,7 +264,7 @@ const OurServices = () => {
             text: 'Secure CI/CD Pipelines',
             icon: 'secure',
           },
-        ],
+        ]
       ],
     },
     {
@@ -289,11 +291,11 @@ const OurServices = () => {
             text: 'Business Intelligence Dashboards',
             icon: 'business',
           },
-          // {
-          //   id: 'predictive-model',
-          //   text: 'Predictive Analytics & Machine Learning Models',
-          //   icon: 'predictive',
-          // },
+          {
+            id: 'predictive-model',
+            text: 'Predictive Analytics & Machine Learning Models',
+            icon: 'predictive',
+          },
           // {
           //   id: 'software-evaluation',
           //   text: 'Software Evaluation & Vendor Management',

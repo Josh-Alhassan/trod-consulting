@@ -1,80 +1,100 @@
-import styles from "./WhyChooseUs.module.css"
-import SectionSubheader from "@/app/components/SectionSubheader";
 import Image from "next/image";
-
-import chooseUs from "@/public/images/chooseUs.svg"
-import Heading from "@/app/components/Heading";
 import Link from "next/link";
+import styles from "./WhyChooseUs.module.css";
+import Heading from "@/app/components/Heading";
 
-import provenResult from '@/public/gridOne.svg'
-import capability from '@/public/gridTwo.svg'
-import expert from '@/public/gridThree.svg'
-import perspective from '@/public/gridFour.svg'
+// Assets
+import chooseUs from "@/public/images/chooseUs.svg";
+import provenResult from '@/public/gridOne.svg';
+import capability from '@/public/gridTwo.svg';
+import expert from '@/public/gridThree.svg';
+import perspective from '@/public/gridFour.svg';
+
+interface PointProps {
+  icon: any;
+  title: string;
+  description: string | React.ReactNode;
+  className?: string;
+  iconAlt: string;
+}
+
+const points: Omit<PointProps, 'className'>[] = [
+  {
+    icon: provenResult,
+    title: "Proven Results",
+    description: <><strong>15+ years</strong> of measurable impact and trusted partnerships.</>,
+    iconAlt: "Proven results icon"
+  },
+  {
+    icon: capability,
+    title: "End-to-End Capability",
+    description: "From strategy to implementation, under one roof.",
+    iconAlt: "Capability icon"
+  },
+  {
+    icon: expert,
+    title: "Certified Experts",
+    description: "Experienced consultants across business, IT, data, and cybersecurity.",
+    iconAlt: "Expertise icon"
+  },
+  {
+    icon: perspective,
+    title: "Global Perspective",
+    description: "Easily scale your financial operations as your business grows.",
+    iconAlt: "Global perspective icon"
+  }
+];
+
+const Point = ({ icon, title, description, className = '', iconAlt }: PointProps) => (
+  <div className={`${styles.pointGrid} ${className}`}>
+    <div className={`${styles.point} ${className ? styles[`point${className}`] : ''}`}>
+      <Image 
+        src={icon} 
+        alt={iconAlt} 
+        width={48} 
+        height={48} 
+        className={styles.pointIcon}
+      />
+      <h4 className={styles.pointTitle}>{title}</h4>
+    </div>
+    <p className={styles.pointDescription}>{description}</p>
+  </div>
+);
 
 export default function WhyChooseUs() {
-    return (
-        <section className={styles.backgroundContainer} aria-label="Why Choose Us">
-            <div className={` ${styles.chooseUsSection} containerSection`}>
-                {/* <SectionSubheader className={styles.serviceSubheader}>
-                    Why Choose Us
-                </SectionSubheader> */}
+  return (
+    <section className={styles.backgroundContainer} aria-label="Why Choose Us">
+      <div className={`${styles.chooseUsSection} containerSection`}>
+        <div className={styles.chooseUsImageWrapper}>
+          <Image 
+            src={chooseUs} 
+            alt="Illustration showing our team collaboration" 
+            width={500}
+            height={400}
+            priority
+          />
+        </div>
 
-                <div className={styles.chooseUsImageWrapper}>
-                    <Image src={chooseUs} alt="Choose Us Image" />
-                </div>
+        <div className={styles.chooseUsWrapper}>
+          <div className={styles.chooseUsTypography}>
+            <Heading level="h2">Why Choose Us</Heading>
+            <p>We design solutions that work for you, not the market average.</p>
+            <Link className={styles.bookCallLink} href="/about">
+              Book a call today!
+            </Link>
+          </div>
 
-                <div className={styles.chooseUsWrapper}>
-
-                    {/* Why choose us Typography */}
-                    <div className={styles.chooseUsTypography}>
-                        <Heading>Why Choose Us</Heading>
-                        <p>We design solutions that work for you, not the market average.</p>
-
-                        <Link className={styles.bookCallLink} href="/about">Book a call today!</Link>
-                    </div>
-
-                    {/* Choose Us points */}
-                    <div className={styles.chooseUsPoints}>
-                        <div className={styles.pointGrid}>
-                            <div className={`${styles.point} ${styles.point1}`}>
-                                <Image src={provenResult} alt="Choose Us Image" />
-                                <h4 className={styles.pointTitle}>Proven Results</h4>
-                            </div>
-
-                            <p className={styles.pointDescription}><strong>15+ years</strong> of measurable impact and trusted partnerships.</p>
-                        </div>
-
-                        <div className={styles.pointGrid}>
-                            <div className={`${styles.point} ${styles.point2}`}>
-                                <Image src={capability} alt="Choose Us Image" />
-
-                                <h4 className={styles.pointTitle}>End-to-End Capability</h4>
-                            </div>
-
-                            <p className={styles.pointDescription}>From strategy to implementation, under one roof.</p>
-                        </div>
-
-                        <div className={styles.pointGrid}>
-                            <div className={`${styles.point} ${styles.point3}`}>
-                                <Image src={expert} alt="Choose Us Image" />
-
-                                <h4 className={styles.pointTitle}>Certified Experts</h4>
-                            </div>
-                            <p className={styles.pointDescription}>Experienced consultants across business, IT, data, and cybersecurity.</p>
-                        </div>
-
-                        <div className={styles.pointGrid}>
-                            <div className={`${styles.point} ${styles.point4}`}>
-                                <Image src={perspective} alt="Choose Us Image" />
-
-                                <h4 className={styles.pointTitle}>Global Perspective</h4>
-                            </div>
-
-                            <p className={styles.pointDescription}>Easily scale your financial operations as your business grows.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
+          <div className={styles.chooseUsPoints}>
+            {points.map((point, index) => (
+              <Point
+                key={point.title}
+                {...point}
+                className={`point${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
