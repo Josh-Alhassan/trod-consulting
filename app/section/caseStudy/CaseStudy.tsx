@@ -59,7 +59,7 @@ const assets = {
 interface CaseStudyItem {
   id: string;
   title: string;
-  description: string;
+  // description: string;
   logo: any;
   image: any;
   outcomes: Array<{
@@ -75,37 +75,38 @@ const CASE_STUDIES: CaseStudyItem[] = [
   {
     id: 'newham',
     title: 'IT Modernisation for the London Borough of Newham ',
-    description: 'The London Borough of Newham partnered with TROD Consulting to upgrade its device ecosystem and prepare for a cloud-first environment.',
+    // description: 'London Borough of Newham partnered with TROD Consulting to support a major IT modernisation programme, enabling the successful rollout of Windows 11, Microsoft 365, and a large-scale cloud migration following the disaggregation from a shared service.',
     logo: assets.logos.newham,
     image: assets.images.newham,
     outcomes: [
-      { icon: assets.icons.upgrade, text: 'Seamless upgrades to Windows 11 and Microsoft 365', alt: 'Upgrade' },
-      { icon: assets.icons.hardware, text: 'Strategic replacement of incompatible hardware', alt: 'Hardware' },
-      { icon: assets.icons.deployment, text: 'Phased deployments ensuring minimal disruption', alt: 'Deployment' },
-      { icon: assets.icons.cloud, text: 'Clear, actionable roadmap for cloud migration', alt: 'Cloud' }
+      { icon: assets.icons.upgrade, text: 'Seamless in-place upgrades of Windows 11 and Microsoft 365 applications', alt: 'Upgrade' },
+      { icon: assets.icons.hardware, text: 'Strategic replacement of all incompatible hardware within budget and timeline', alt: 'Hardware' },
+      { icon: assets.icons.deployment, text: 'Phased deployments that minimised risk and ensured business continuity', alt: 'Deployment' },
+      { icon: assets.icons.cloud, text: 'Completed a comprehensive discovery exercise covering all shared applications and services', alt: 'Cloud' },
+      { icon: assets.icons.cloud, text: 'Smooth transition of applications to Vendor Cloud and Azure Public Cloud', alt: 'Cloud' }
     ],
-    testimony: 'The London Borough of Newham partnered with TROD Consulting to upgrade its device ecosystem and prepare for a cloud-first environment.',
-    location: 'Newham Borough'
+    testimony: 'London Borough of Newham partnered with TROD Consulting to support a major IT modernisation programme, enabling the successful rollout of Windows 11, Microsoft 365, and a large-scale cloud migration following the disaggregation from a shared service.',
+    location: 'LONDON BOROUGH OF NEWHAM'
   },
   {
     id: 'birmingham',
-    title: 'Route Change & Cost Digitalisation for Birmingham City Council',
-    description: 'Birmingham City Council partnered with TROD Consulting to streamline route change processes, improve data accuracy, and enhance collaboration across teams.',
+    title: 'Route Change & Cost Digitisation for Birmingham City Council',
+    // description: 'Birmingham City Council partnered with TROD Consulting to streamline route change processes, improve data accuracy, and enhance collaboration across teams.',
     logo: assets.logos.birmingham,
     image: assets.images.birmingham,
     outcomes: [
       { icon: assets.icons.storage, text: 'Centralised all route change data in a single SharePoint system', alt: 'Storage' },
       { icon: assets.icons.automation, text: 'Ensured accurate, consistent data entry with Power Apps automation', alt: 'Automation' },
-      { icon: assets.icons.calculations, text: 'Automated cost calculations for real-time visibility into changes', alt: 'Calculation' },
+      { icon: assets.icons.calculations, text: 'Automated cost changes calculations for real-time visibility', alt: 'Calculation' },
       { icon: assets.icons.workProcess, text: 'Reduced manual workload and costly errors through process automation', alt: 'Work Process' }
     ],
-    testimony: 'TROD Consulting helped us transform a complex, manual process into a seamless digital workflow, saving time and improving decision-making across the board.',
-    location: 'Birmingham City Council'
+    testimony: 'TROD Consulting supported the recovery of a high-risk public service of the Borough by redesigning processes and implementing an interim digital CRM solution, improving control, transparency, and trust.',
+    location: 'BIRMINGHAM CITY COUNCIL:'
   },
   {
     id: 'LSEG',
     title: 'Strengthening Cybersecurity for LSEG',
-    description: 'LSEG partnered with TROD Consulting to enhance its security posture, streamline vulnerability management, and improve operational visibility across its IT environment.',
+    // description: 'LSEG partnered with TROD Consulting to enhance its security posture, streamline vulnerability management, and improve operational visibility across its IT environment.',
     logo: assets.logos.londonstock,
     image: assets.images.londonstockExchange,
     outcomes: [
@@ -113,31 +114,32 @@ const CASE_STUDIES: CaseStudyItem[] = [
       { icon: assets.icons.monitor, text: 'Reduced potential breaches through proactive threat monitoring', alt: 'Monitor' },
       { icon: assets.icons.patchProcess, text: 'Automated vulnerability and patch management processes', alt: 'Patch Process' },
       { icon: assets.icons.workProcess, text: 'Delivered real-time security insights through advanced dashboards', alt: 'Work Process' },
-      { icon: assets.icons.risk, text: 'Improved overall risk management and operational efficiency', alt: 'Risk' }
+      { icon: assets.icons.risk, text: 'Improved overall risk management and operational efficiency', alt: 'Risk' },
+      { icon: assets.icons.monitor, text: 'Improved overall risk management and operational efficiency', alt: 'Platform' },
     ],
-    testimony: 'TROD’s professionalism and clarity transformed how we manage technology across the organization.',
-    location: 'London Stock Exchange Group'
+    testimony: 'TROD Consulting Led assurance and service transition for the enterprise rollout of vulnerability and compliance management services, assessed delivery readiness and enabled secure transition of critical security capabilities into BAU',
+    location: 'LONDON STOCK EXCHANGE GROUP'
   },
   {
     id: 'capita',
-    title: 'Transforming Cyber Resilience for Capita Plc',
-    description: 'Capita worked with TROD Consulting to deploy advanced security technologies that strengthened its threat detection, data protection, and compliance posture.',
+    title: 'Transforming Cyber Resilience for Capita',
+    // description: 'Capita worked with TROD Consulting to deploy advanced security technologies that strengthened its threat detection, data protection, and compliance posture.',
     logo: assets.logos.capita,
     image: assets.images.capita,
     outcomes: [
-      { icon: assets.icons.rapidResponse, text: 'Real-time monitoring and rapid response with QROC (SIEM)', alt: 'Assets' },
+      { icon: assets.icons.rapidResponse, text: 'Real-time monitoring and rapid response with Qualys ', alt: 'Assets' },
       { icon: assets.icons.digitalGuardian, text: 'Enterprise-wide data loss prevention using Digital Guardian', alt: 'Digital Gaurdian' },
       { icon: assets.icons.scan, text: 'Continuous vulnerability scanning via Qualys', alt: 'Scan Process' },
       { icon: assets.icons.defense, text: 'Improved cyber-resilience maturity and proactive defence', alt: 'Defence' },
       { icon: assets.icons.operations, text: 'Automated compliance checks and streamlined operations by 45%', alt: 'Operations' }
     ],
-    testimony: 'TROD’s professionalism and clarity transformed how we manage technology across the organization.',
-    location: 'Capita, London'
+    testimony: 'Capita partnered with TROD Consulting to identify risks and improvement actions to enable the successful deployment of SIEM, DLP, and vulnerability management tools.',
+    location: 'CAPITA'
   },
   {
     id: 'hsbc',
-    title: 'SOC Technology Integration for HSBC',
-    description:'HSBC partnered with TROD Consulting to enhance its global Security Operations Centre capabilities without disrupting existing systems.',
+    title: 'GSOC Technology Integration for HSBC',
+    // description:'HSBC partnered with TROD Consulting to enhance its global Security Operations Centre capabilities without disrupting existing systems.',
     logo: assets.logos.hsbc,
     image: assets.images.hsbc,
     outcomes: [
@@ -145,10 +147,11 @@ const CASE_STUDIES: CaseStudyItem[] = [
       { icon: assets.icons.safety, text: '50% improvement in real-time threat detection and visibility', alt: 'Safety' },
       { icon: assets.icons.detection, text: 'Deployment of advanced threat detection tools against APTs', alt: 'Detection' },
       { icon: assets.icons.protection, text: 'Strong stakeholder collaboration for smooth implementation', alt: 'Protection' },
-      { icon: assets.icons.visibility, text: 'Faster incident response through upgraded automation.', alt: 'Visibility' },
-      { icon: assets.icons.compliance, text: 'Fully compliant, scalable solutions supporting HSBC’s global footprint.', alt: 'Compliance' }
+      { icon: assets.icons.visibility, text: 'Faster incident response through upgraded automation', alt: 'Visibility' },
+      { icon: assets.icons.compliance, text: 'Fully compliant, scalable solutions supporting HSBC’s global footprint', alt: 'Compliance' },
+      { icon: assets.icons.automation, text: 'Development of comprehensive training programs to upskill SOC personnel', alt: 'Compliance' }
     ],
-    testimony: 'TROD’s professionalism and clarity transformed how we manage technology across the organization.',
+    testimony: 'We assessed the impact and readiness for new security technologies within the Global Security Operations Centre to enable safe integration and transition of enhanced monitoring capabilities into BAU.',
     location: 'HSCB London'
   }
 ];
@@ -175,7 +178,7 @@ export default function CaseStudy() {
             <Heading className={styles.caseStudyHeading} id="case-studies-heading">
               {currentStudy.title}
             </Heading>
-            <p className={styles.caseStudyText}>{currentStudy.description}</p>
+            {/* <p className={styles.caseStudyText}>{currentStudy.description}</p> */}
           </div>
 
           <button 
