@@ -115,7 +115,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
       { icon: assets.icons.patchProcess, text: 'Automated vulnerability and patch management processes', alt: 'Patch Process' },
       { icon: assets.icons.workProcess, text: 'Delivered real-time security insights through advanced dashboards', alt: 'Work Process' },
       { icon: assets.icons.risk, text: 'Improved overall risk management and operational efficiency', alt: 'Risk' },
-      { icon: assets.icons.monitor, text: 'Improved overall risk management and operational efficiency', alt: 'Platform' },
+      // { icon: assets.icons.monitor, text: 'Improved overall risk management and operational efficiency', alt: 'Platform' },
     ],
     testimony: 'TROD Consulting Led assurance and service transition for the enterprise rollout of vulnerability and compliance management services, assessed delivery readiness and enabled secure transition of critical security capabilities into BAU',
     location: 'LONDON STOCK EXCHANGE GROUP'

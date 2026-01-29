@@ -8,6 +8,8 @@ import BottomSheet from './components/BottomSheet';
 
 const Contact = () => {
   const [isBottomSheetOpen, setIsBottomSheetOpen] = useState(false);
+  
+  const getCurrentYear = () => new Date().getFullYear();
 
   const toggleBottomSheet = () => {
     setIsBottomSheetOpen(!isBottomSheetOpen);
@@ -23,7 +25,7 @@ const Contact = () => {
 
         <div className={styles.copyRight}>
           <h3 className={styles.copyrightTitle}>
-            Copyright © 2025 TROD Consulting Ltd • All Rights Reserved.
+            Copyright © {getCurrentYear()} TROD Consulting Ltd • All Rights Reserved.
           </h3>
           <p className={styles.copyrightText}>
             All rights reserved. Unauthorized use is strictly prohibited.
