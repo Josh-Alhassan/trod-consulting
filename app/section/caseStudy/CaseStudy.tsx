@@ -79,11 +79,11 @@ const CASE_STUDIES: CaseStudyItem[] = [
     logo: assets.logos.newham,
     image: assets.images.newham,
     outcomes: [
-      { icon: assets.icons.upgrade, text: 'Seamless in-place upgrades of Windows 11 and Microsoft 365 applications', alt: 'Upgrade' },
-      { icon: assets.icons.hardware, text: 'Strategic replacement of all incompatible hardware within budget and timeline', alt: 'Hardware' },
-      { icon: assets.icons.deployment, text: 'Phased deployments that minimised risk and ensured business continuity', alt: 'Deployment' },
-      { icon: assets.icons.cloud, text: 'Completed a comprehensive discovery exercise covering all shared applications and services', alt: 'Cloud' },
-      { icon: assets.icons.cloud, text: 'Smooth transition of applications to Vendor Cloud and Azure Public Cloud', alt: 'Cloud' }
+      { icon: assets.icons.upgrade, text: 'Seamless in-place upgrades of Windows 11 and Microsoft 365 apps across all compatible devices with minimal user disruption', alt: 'Upgrade' },
+      { icon: assets.icons.hardware, text: 'Delivered large-scale digital change with minimal disruption to critical services, maintaining operational continuity throughout deployment', alt: 'Hardware' },
+      { icon: assets.icons.deployment, text: 'Identified and mitigated key dependency and compatibility risks, preventing service outages during migration', alt: 'Deployment' },
+      { icon: assets.icons.cloud, text: 'Produced clear, actionable discovery outputs that informed prioritisation, risk management, and delivery sequencing', alt: 'Cloud' },
+      { icon: assets.icons.cloud, text: 'Strengthened stakeholder confidence through transparent communication of risk, impact, and mitigation strategies', alt: 'Cloud' }
     ],
     testimony: 'London Borough of Newham partnered with TROD Consulting to support a major IT modernisation programme, enabling the successful rollout of Windows 11, Microsoft 365, and a large-scale cloud migration following the disaggregation from a shared service.',
     location: 'LONDON BOROUGH OF NEWHAM'
