@@ -29,7 +29,7 @@ interface Testimonial {
 const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
-    name: 'Birmingham City FC',
+    name: 'Birmingham City Council',
     role: 'Sport Association',
     company: '',
     text: 'TROD Consulting completely transformed our approach to IT and data. Their team understood our business challenges and delivered practical, scalable solutions.',
