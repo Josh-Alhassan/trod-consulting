@@ -101,7 +101,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
       { icon: assets.icons.workProcess, text: 'Reduced manual workload and costly errors through process automation', alt: 'Work Process' }
     ],
     testimony: 'TROD Consulting supported the recovery of a high-risk public service of the Borough by redesigning processes and implementing an interim digital CRM solution, improving control, transparency, and trust.',
-    location: 'BIRMINGHAM CITY COUNCIL:'
+    location: 'BIRMINGHAM CITY COUNCIL'
   },
   {
     id: 'LSEG',
@@ -145,7 +145,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
     outcomes: [
       { icon: assets.icons.seamless, text: 'Seamless integration of new SOC technologies with zero disruption', alt: 'Seamless Safety' },
       { icon: assets.icons.safety, text: '50% improvement in real-time threat detection and visibility', alt: 'Safety' },
-      { icon: assets.icons.detection, text: 'Deployment of advanced threat detection tools against APTs', alt: 'Detection' },
+      { icon: assets.icons.detection, text: 'Deployment of advanced threat detection tools against cyberattacks and data breaches', alt: 'Detection' },
       { icon: assets.icons.protection, text: 'Strong stakeholder collaboration for smooth implementation', alt: 'Protection' },
       { icon: assets.icons.visibility, text: 'Faster incident response through upgraded automation', alt: 'Visibility' },
       { icon: assets.icons.compliance, text: 'Fully compliant, scalable solutions supporting HSBC’s global footprint', alt: 'Compliance' },

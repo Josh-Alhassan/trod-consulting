@@ -30,7 +30,7 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
     name: 'Birmingham City Council',
-    role: 'Sport Association',
+    role: 'Local Authority',
     company: '',
     text: 'TROD Consulting completely transformed our approach to IT and data. Their team understood our business challenges and delivered practical, scalable solutions.',
     image: birminghamCity,
@@ -60,8 +60,8 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: '4',
     name: 'Newham',
-    role: 'Logistics &',
-    company: 'Transportation',
+    role: 'Local Authority',
+    company: '',
     text: 'Working with TROD was a game-changer for our digital transformation journey. Highly recommended!',
     image: newham,
     signature: joshuaSignature,
