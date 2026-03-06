@@ -152,7 +152,7 @@ const CASE_STUDIES: CaseStudyItem[] = [
       { icon: assets.icons.automation, text: 'Development of comprehensive training programs to upskill SOC personnel', alt: 'Compliance' }
     ],
     testimony: 'We assessed the impact and readiness for new security technologies within the Global Security Operations Centre to enable safe integration and transition of enhanced monitoring capabilities into BAU.',
-    location: 'HSCB London'
+    location: 'HSBC'
   }
 ];
 

@@ -26,7 +26,7 @@ interface TrustedByProps {
  */
 const TrustedBy: React.FC<TrustedByProps> = ({
   className = '',
-  title = 'Trusted in finance, trading institutions, energy, utility, insurance, and healthcare for over a decade.',
+  title = 'Trusted in finance, trading institutions, energy, utility, insurance, local authority, and healthcare for over a decade.',
   subtitle = 'Regardless of size, from small startups to large corporations.',
 }) => {
   return (
